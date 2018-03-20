@@ -121,9 +121,6 @@ brew analytics off
 # RUBY
 echo "update ruby"
 
-# Install gems without docs
-echo 'gem: --no-document' >> ~/.gemrc
-
 # Install RVM and Ruby 2.5.0
 brew install gpg
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BD
@@ -188,5 +185,8 @@ ln -sf $(pwd)/.zshrc ~/.zshrc
 
 echo "symlink hyper config"
 ln -sf $(pwd)/.hyper.js ~/.hyper.js
+
+echo "symlink gemrc"
+ln -sf $(pwd)/.gemrc ~/.gemrc
 
 echo "Done! You may need to reboot your machine for all changes to take effect"
