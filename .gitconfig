@@ -1,0 +1,13 @@
+[alias]
+	comit = commit
+	ad = add
+	ch = checkout
+	confog = config
+	st = status -u
+	unstage = reset HEAD -- 
+	pud = pull upstream development
+	pul = pull	
+	puh = push upstream head
+	lg = log --graph --pretty=format:'%C(red)%h%C(reset) %C(yellow)%d%C(reset) %s %C(green)(%cr)%C(reset) %C(blue)<%an>%Creset'
+[push]
+	default = simple
