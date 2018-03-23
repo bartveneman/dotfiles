@@ -50,6 +50,7 @@ gems=(
 npms=(
   now
   npm
+  pure-prompt
   yarn
 )
 
