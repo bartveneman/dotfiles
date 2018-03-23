@@ -97,7 +97,7 @@ module.exports = {
     paneNavigation: {
       showIndicators: false,
       focusOnMouseHover: true
-    },
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -113,6 +113,7 @@ module.exports = {
     'hyper-tab-icons', // Tab icons
     'hyper-pane', // Autofocus on hover
     'hyper-simple-highlight-active-session', // Highlight active pane
+    'hyperterm-cursor', // Make text underneath cursor visible
   ],
 
   // in development, you can create a directory under
