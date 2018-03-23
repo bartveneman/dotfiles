@@ -1,5 +1,7 @@
 # Dotfiles
 
+![Screenshot](screenshot.png)
+
 ## Installation
 
 ```bash
