@@ -7,12 +7,7 @@ export ZSH=/Users/bartveneman/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
-
-# Set default user and prompt_context to avoid a super large
-# prefix in the bash
-DEFAULT_USER="bartveneman"
-prompt_context(){}
+ZSH_THEME=""
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -58,3 +53,7 @@ plugins=()
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/env.sh
+
+# Prompt stuff to make pure prompt work: https://github.com/sindresorhus/pure
+autoload -U promptinit; promptinit
+prompt pure

@@ -97,7 +97,7 @@ module.exports = {
     bell: 'SOUND',
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false
+    copyOnSelect: false,
 
     // if true, on right click selected text will be copied or pasted if no
     // selection is present (true by default on Windows)
@@ -107,6 +107,10 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+    paneNavigation: {
+      showIndicators: false,
+      focusOnMouseHover: true
+    },
   },
 
   // a list of plugins to fetch and install from npm
@@ -116,11 +120,12 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hypercwd',
-    'hyperlinks',
-    'hyperterm-cobalt2-theme',
-    'hyper-tab-icons',
-    "hyper-simple-highlight-active-session"
+    'hypercwd', // Open a new tab in the same dir as the current one
+    'hyperlinks', // Make urls clickable
+    'hyper-snazzy', // Theme
+    'hyper-tab-icons', // Tab icons
+    'hyper-pane', // Autofocus on hover
+    'hyper-simple-highlight-active-session', // Highlight active pane
   ],
 
   // in development, you can create a directory under
