@@ -3,10 +3,11 @@
 	ad = add
 	ch = checkout
 	confog = config
-	st = status -u
+	st = status -u -s -b
+	diff = diff -w --abbrev
 	unstage = reset HEAD -- 
 	pud = pull upstream development
-	pul = pull	
+	pul = pull 
 	puh = push upstream head
 	lg = log --graph --pretty=format:'%C(red)%h%C(reset) %C(yellow)%d%C(reset) %s %C(green)(%cr)%C(reset) %C(blue)<%an>%Creset'
 [push]
