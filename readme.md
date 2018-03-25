@@ -24,4 +24,3 @@ bash install.sh
 1. Set the correct Startup Items in System Preferences > Users & Groups > Login Items
 1. Install the [CodePen Screensaver](https://blog.codepen.io/documentation/features/codepen-tv/)
  and set the [correct URL](https://codepen.io/tv/DojMdK)
-1. Set the [wallpaper](https://unsplash.com/photos/hjzQAFbXvUA)

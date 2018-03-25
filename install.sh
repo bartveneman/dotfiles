@@ -7,6 +7,7 @@ brews=(
   coreutils
   git
   grep
+  hr
   python
   node
   nvm
@@ -51,6 +52,7 @@ npms=(
   now
   npm
   pure-prompt
+  wallpaper-cli
   yarn
 )
 
@@ -189,5 +191,8 @@ ln -sf $(pwd)/.hyper.js ~/.hyper.js
 
 echo "symlink gemrc"
 ln -sf $(pwd)/.gemrc ~/.gemrc
+
+# Set Wallpaper via wallpaper-cli
+wallpaper https://images.unsplash.com/photo-1464011106587-1693fe42a668\?ixlib\=rb-0.3.5\&q\=85\&fm\=jpg\&crop\=entropy\&cs\=srgb\&s\=2565dd6bec95d75483a2ce69a35a989f
 
 echo "Done! You may need to reboot your machine for all changes to take effect"
