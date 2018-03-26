@@ -24,3 +24,5 @@ bash install.sh
 1. Set the correct Startup Items in System Preferences > Users & Groups > Login Items
 1. Install the [CodePen Screensaver](https://blog.codepen.io/documentation/features/codepen-tv/)
  and set the [correct URL](https://codepen.io/tv/DojMdK)
+1. Install [Battery Indicator](https://itunes.apple.com/no/app/battery-indicator/id1206020918?mt=12)
+1. Setup GPG to sign git commits and tags

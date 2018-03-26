@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+export GPG_TTY=$(tty)
+
 # Aliases
 alias rm=trash
 alias cat=ccat
