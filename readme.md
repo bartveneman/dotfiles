@@ -25,4 +25,4 @@ bash install.sh
 1. Install the [CodePen Screensaver](https://blog.codepen.io/documentation/features/codepen-tv/)
  and set the [correct URL](https://codepen.io/tv/DojMdK)
 1. Install [Battery Indicator](https://itunes.apple.com/no/app/battery-indicator/id1206020918?mt=12)
-1. Setup GPG to sign git commits and tags
+1. [Setup GPG](https://help.github.com/articles/signing-commits-with-gpg/) to sign git commits and tags
