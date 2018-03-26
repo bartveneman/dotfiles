@@ -6,6 +6,7 @@ brews=(
   ccat
   coreutils
   git
+  gpg
   grep
   hr
   python
