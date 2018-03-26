@@ -3,12 +3,23 @@
 	ad = add
 	ch = checkout
 	confog = config
-	st = status -u -s -b
+	st = status
 	diff = diff -w --abbrev
 	unstage = reset HEAD -- 
-	pud = pull upstream development
 	pul = pull 
-	puh = push upstream head
-	lg = log --graph --pretty=format:'%C(red)%h%C(reset) %C(yellow)%d%C(reset) %s %C(green)(%cr)%C(reset) %C(blue)<%an>%Creset'
+[commit]
+	gpgSign = true
+[tag]
+	forceSignAnnotated = true
 [push]
 	default = simple
+[status]
+	short = true
+	branch = true
+	showUntrackedFiles = all
+[user]
+	name = Bart Veneman
+	email = bartveneman@gmail.com
+	signingkey = 248141E6314B248A
+[github]
+	username = bartveneman
