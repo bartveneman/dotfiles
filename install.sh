@@ -6,12 +6,12 @@ brews=(
   ccat
   coreutils
   git
-  gpg
   grep
   hr
-  python
+  mas
   node
   nvm
+  python
   trash
   yarn
   zsh
@@ -135,6 +135,14 @@ sudo gem update --system
 # BREW PACKAGES
 echo "install brew packages"
 install 'brew install' ${brews[@]}
+
+# Mac App Store apps
+echo "Installing Mac App Store Apps"
+echo "Type your App Store email, followed by [ENTER]"
+read APP_STORE_EMAIL
+echo "You typed $APP_STORE_EMAIL, signing in"
+mas signin $APP_STORE_EMAIL
+mas install 1206020918 # Battery Indicator (1.2.0)
 
 # BREW CASK PACKAGES
 echo "install brew cask packages"
