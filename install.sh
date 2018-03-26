@@ -174,10 +174,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 echo "install Mac OS defaults"
 sh macos.sh
 
-echo "install dock settings"
-# ... and the dock right after it
-sh dock.sh
-
 # SETUP PATH
 # http://sourabhbajaj.com/mac-setup/Homebrew/
 # https://github.com/driesvints/dotfiles/blob/master/path.zsh
@@ -200,6 +196,15 @@ ln -sf $(pwd)/.hyper.js ~/.hyper.js
 
 echo "symlink gemrc"
 ln -sf $(pwd)/.gemrc ~/.gemrc
+
+# Setup dock
+dockutil --no-restart --remove all
+dockutil --no-restart --add "/Applications/Firefox Developer Edition.app"
+dockutil --no-restart --add "/Applications/Hyper.app"
+dockutil --no-restart --add "/Applications/Visual Studio Code.app"
+dockutil --no-restart --add "/Applications/Spotify.app"
+
+killall Dock
 
 # Set Wallpaper via wallpaper-cli
 wallpaper https://images.unsplash.com/photo-1464011106587-1693fe42a668\?ixlib\=rb-0.3.5\&q\=85\&fm\=jpg\&crop\=entropy\&cs\=srgb\&s\=2565dd6bec95d75483a2ce69a35a989f
