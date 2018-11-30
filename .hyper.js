@@ -22,11 +22,13 @@ module.exports = {
     // by default ['--login'] will be used
     shellArgs: ['--login'],
 
-    // for environment variables
-    env: {},
-
     // set to false for no bell
     bell: false,
+
+    // for environment variables
+    env: {
+      PURE_PROMPT_SYMBOL: '⚡︎'
+    },
 
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
@@ -39,9 +41,8 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hypercwd', // Open a new tab in the same dir as the current one
-    'hyper-snazzy', // Theme
+    'hyper-wallace', // Theme
     'hyper-tab-icons', // Tab icons
-    'hyperterm-cursor', // Make text underneath cursor visible
   ],
 
   // in development, you can create a directory under
