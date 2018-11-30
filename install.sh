@@ -3,7 +3,7 @@
 brews=(
   bash
   battery
-  ccat
+  bat
   coreutils
   git
   grep
