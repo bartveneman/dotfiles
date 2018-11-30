@@ -59,13 +59,15 @@ npms=(
 
 vscode=(
   ms-vscode.atom-keybindings
+  formulahendry.auto-close-tag
   formulahendry.auto-rename-tag
+  coenraads.bracket-pair-colorizer
   wesbos.theme-cobalt2
-  wix.vscode-import-cost
+  mikestead.dotenv
   samverschueren.linter-xo
-  christian-kohler.path-intellisense
   esbenp.prettier-vscode
   wayou.vscode-todo-highlight
+  wakatime.vscode-wakatime
 )
 
 fonts=(
