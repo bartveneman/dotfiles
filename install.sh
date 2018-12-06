@@ -32,7 +32,6 @@ casks=(
   hyper
   imageoptim
   opera
-  slack
   spectacle
   spotify
   visual-studio-code
@@ -53,11 +52,13 @@ gems=(
 npms=(
   diff-so-fancy
   gromit-cli
+  nodemon
   now
   npm
+  np
   pure-prompt
+  trash-cli
   wallace-cli
-  wallpaper-cli
   yarn
 )
 
