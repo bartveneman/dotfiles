@@ -200,6 +200,9 @@ ln -sf $(pwd)/.hyper.js ~/.hyper.js
 echo "symlink gemrc"
 ln -sf $(pwd)/.gemrc ~/.gemrc
 
+echo "symlink .npmrc"
+ls -sf $(pwd)/.npmrc ~/.npmrc
+
 # Setup dock
 dockutil --no-restart --remove all
 dockutil --no-restart --add "/Applications/Firefox Developer Edition.app"
