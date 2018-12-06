@@ -1,6 +1,6 @@
 # Dotfiles
 
-![Screenshot](screenshot.png)
+![Screenshot](https://file-icylxrpgxw.now.sh/)
 
 ## Installation
 
