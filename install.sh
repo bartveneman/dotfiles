@@ -51,9 +51,12 @@ gems=(
 )
 
 npms=(
+  diff-so-fancy
+  gromit-cli
   now
   npm
   pure-prompt
+  wallace-cli
   wallpaper-cli
   yarn
 )
