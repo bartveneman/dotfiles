@@ -38,15 +38,16 @@ casks=(
   visual-studio-code
 
   # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
-  qlcolorcode 
-  qlstephen 
-  qlmarkdown 
-  quicklook-json 
+  qlcolorcode
+  qlstephen
+  qlmarkdown
+  quicklook-json
   qlimagesize
 )
 
 gems=(
   bundle
+  jekyll
 )
 
 npms=(
@@ -113,7 +114,7 @@ if test ! $(which brew); then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
   prompt "update homebrew"
-  
+
   # Make sure we’re using the latest Homebrew.
   brew update
 

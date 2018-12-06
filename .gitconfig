@@ -7,10 +7,10 @@
 	d = diff
 	c = checkout
 	ch = checkout
-	cm = commit -S -m
+	cm = commit -m
 
 	# Actual aliases
-	unstage = reset HEAD -- 
+	unstage = reset HEAD --
 	amend = commit --amend --reuse-message=HEAD
 
 	# List things
@@ -25,7 +25,7 @@
 
 [commit]
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgSign = true
+	# gpgSign = true
 
 [core]
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
@@ -43,6 +43,10 @@
 
 [help]
 	autocorrect = 1
+
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
 
 [pull]
 	rebase = true
