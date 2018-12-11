@@ -187,9 +187,8 @@ sh macos.sh
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
 
 # CONFIGURE GIT
-# http://sourabhbajaj.com/mac-setup/Git/gitignore.html
-curl https://raw.githubusercontent.com/github/gitignore/master/Global/macOS.gitignore -o ~/.gitignore
 ln -sf $(pwd)/.gitconfig ~/.gitconfig
+ln -sf $(pwd)/.gitignore_global ~/.gitignore_global
 
 # SETUP ALIASES ETC
 echo "symlink aliases and functions"
