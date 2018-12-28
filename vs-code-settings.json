@@ -38,5 +38,8 @@
         "rgba(48,48,48,0.3)",
         "rgba(64,64,64,0.3)",
         "rgba(96,95,95,0.3)"
-    ]
+    ],
+    
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false
 }
