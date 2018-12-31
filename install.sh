@@ -52,6 +52,7 @@ gems=(
 npms=(
   diff-so-fancy
   gromit-cli
+  n
   nodemon
   now
   npm
