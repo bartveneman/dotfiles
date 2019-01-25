@@ -26,3 +26,4 @@ bash install.sh
 1. Install [Sblack](), instead of the default Slack client
 1. [Setup GPG](https://help.github.com/articles/signing-commits-with-gpg/) to sign git commits and tags
 1. Setup private DNS, using [Cloudflare](https://1.1.1.1/)
+1. (Optional) Setup config for PHPStorm
