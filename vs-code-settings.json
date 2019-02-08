@@ -1,45 +1,47 @@
 {
+    "window.zoomLevel": 0,
+    "editor.fontSize": 14,
+    "workbench.colorTheme": "ZEIT",
     "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": false,
-    "workbench.colorTheme": "ZEIT",
-    "window.zoomLevel": 0,
-    "editor.fontSize": 15,
-    "editor.tabSize": 2,
-    "editor.rulers": [
-        80,
-        120
-    ],
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
+    "workbench.statusBar.feedback.visible": false,
     "workbench.startupEditor": "newUntitledFile",
-    "diffEditor.ignoreTrimWhitespace": true,
-    "[less]": {},
-    "workbench.editor.enablePreview": false,
-    "editor.minimap.showSlider": "always",
-    "[csv]": {},
-    "files.insertFinalNewline": true,
-    "editor.renderWhitespace": "boundary",
-    "explorer.autoReveal": false,
-    "prettier.printWidth": 120,
-    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
-    "phpformatter.pharPath": "/usr/local/bin/php-cs-fixer",
-    "window.clickThroughInactive": false,
+    "editor.tabSize": 2,
     "explorer.confirmDelete": false,
+    "workbench.editor.enablePreview": false,
     "files.associations": {
-        "crontab": "shellscript",
-        ".gromitrc": "jsonc"
+        ".aliases": "shellscript",
+        ".gromitrc": "jsonc",
+        ".pug-lintrc": "jsonc"
     },
-    "explorer.openEditors.visible": 0,
-    "editor.scrollBeyondLastLine": false,
-    "phpcs.enable": false,
+    "editor.insertSpaces": false,
+    "files.trimTrailingWhitespace": true,
+    "editor.renderWhitespace": "boundary",
+    "puglint.enable": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "editor.formatOnSave": true,
     "update.showReleaseNotes": false,
+    "prettier.requireConfig": true,
+    "workbench.activityBar.visible": false,
+    "markdownlint.config": {
+        "MD013": false,
+        "MD002": false
+    },
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "explorer.openEditors.visible": 0,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "cSpell.userWords": [
+        "minified",
+        "preprocessors"
+    ],
+    "editor.scrollBeyondLastLine": false,
     "indentRainbow.colors": [
         "rgba(48,48,48,0.3)",
         "rgba(64,64,64,0.3)",
-        "rgba(96,95,95,0.3)"
-    ],
-    
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false
+"       rgba(96,95,95,0.3)"
+    ]
 }
