@@ -2,17 +2,13 @@
 
 brews=(
   bash
-  battery
   bat
   coreutils
   git
   grep
-  hr
-  mas
   node
   nvm
   python
-  trash
   yarn
   zsh
   zsh-completions
@@ -24,15 +20,11 @@ brews=(
 )
 
 casks=(
-  caffeine
   firefox
   firefox-developer-edition
-  font-inconsolata-for-powerline
   google-chrome
   hyper
-  imageoptim
-  opera
-  spectacle
+  rectangle
   spotify
   visual-studio-code
 
@@ -44,42 +36,15 @@ casks=(
   qlimagesize
 )
 
-gems=(
-  bundle
-  jekyll
-)
-
 npms=(
   diff-so-fancy
-  gromit-cli
-  n
   nodemon
   now
   npm
   np
   pure-prompt
-  trash-cli
   wallace-cli
   yarn
-)
-
-vscode=(
-  ms-vscode.atom-keybindings
-  formulahendry.auto-close-tag
-  formulahendry.auto-rename-tag
-  coenraads.bracket-pair-colorizer
-  wesbos.theme-cobalt2
-  mikestead.dotenv
-  samverschueren.linter-xo
-  esbenp.prettier-vscode
-  wayou.vscode-todo-highlight
-  wakatime.vscode-wakatime
-)
-
-fonts=(
-  font-fira-mono-for-powerline
-  font-inconsolata-for-powerline
-  font-source-code-pro-for-powerline
 )
 
 set +e # Enables checking of commands
@@ -144,27 +109,13 @@ sudo gem update --system
 echo "install brew packages"
 install 'brew install' ${brews[@]}
 
-# Mac App Store apps
-echo "Installing Mac App Store Apps"
-echo "Type your App Store email, followed by [ENTER]"
-read APP_STORE_EMAIL
-echo "You typed $APP_STORE_EMAIL, signing in"
-mas signin $APP_STORE_EMAIL
-mas install 1206020918 # Battery Indicator (1.2.0)
-
 # BREW CASK PACKAGES
 echo "install brew cask packages"
 install 'brew cask install' ${casks[@]}
 
-# BREW CASK FONTS
-brew tap caskroom/fonts
-install 'brew cask install' ${fonts[@]}
-
 # SECONDARY PACKAGES
 echo "install secondary packages"
-install 'gem install' ${gems[@]}
 install 'npm install --global' ${npms[@]}
-install 'code --install-extension' ${vscode[@]}
 
 # Remove outdated versions from the cellar.
 echo "clean up"
