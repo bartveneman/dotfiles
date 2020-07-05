@@ -28,3 +28,4 @@ bash install.sh
 1. Setup private DNS, using [Cloudflare](https://1.1.1.1/)
 1. (Optional) Setup config for PHPStorm
 1. Install [Zeit's VS Code theme](https://twitter.com/quietshu/status/1074393919750881280)
+1. (Optional) Set [custom Mac OS app icons](https://dusk.now.sh/)
