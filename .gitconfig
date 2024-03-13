@@ -2,47 +2,39 @@
 	# Shortcuts
 	a = add
 	s = status
-	st = status
-	p = pull
 	d = diff
 	c = checkout
-	ch = checkout
 	cm = commit -m
-
-	# Actual aliases
-	unstage = reset HEAD --
-	amend = commit --amend --reuse-message=HEAD
-
-	# List things
-	tags = tag -l
-	branches = branch -a
-	remotes = remote -v
-	contributors = shortlog --summary --numbered
 
 [apply]
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
 
-[commit]
-	# https://help.github.com/articles/signing-commits-using-gpg/
-	# gpgSign = true
+[merge]
+	# https://ductile.systems/zdiff3/
+	conflictstyle = zdiff3
 
 [core]
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
 	# [default] trailing-space: looks for spaces at the end of a line
 	# [default] space-before-tab: looks for spaces before tabs at the beginning of a line
 	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+	# Include my global gitignore
+	excludesfile = ~/.gitignore_global
 
 [diff]
 	# Detect copies as well as renames
 	renames = copies
+	# https://luppeng.wordpress.com/2020/10/10/when-to-use-each-of-the-git-diff-algorithms/
+	algorithm = histogram
 
 [fetch]
 	# Clean up removed branches when fetching/pulling
 	prune = true
 
 [help]
-	autocorrect = 1
+	# Don't autocorrect typos, wait 10 seconds before auto-correcting
+	autocorrect = 100
 
 [pager]
 	diff = diff-so-fancy | less --tabs=1,5 -RFX
@@ -56,19 +48,21 @@
 	default = simple
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
+	autoSetupRemote = true
 
 [status]
 	short = true
 	branch = true
 	showUntrackedFiles = all
 
+[init]
+	defaultBranch = main
+
+[branch]
+	sort = -committerdate
+
 [tag]
 	forceSignAnnotated = true
-
-[user]
-	name = Bart Veneman
-	email = bartveneman@users.noreply.github.com
-	signingkey = 248141E6314B248A
 
 [github]
 	username = bartveneman
