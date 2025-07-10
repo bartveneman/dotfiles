@@ -9,42 +9,24 @@ brews=(
   node
   nvm
   python
-  yarn
   zsh
   zsh-completions
   zsh-autosuggestions
   zsh-syntax-highlighting
-
-  # Workaround for installing dockutil
-  https://github.com/keith/homebrew/raw/ks-dockutil/Library/Formula/dockutil.rb
 )
 
 casks=(
   firefox
-  firefox-developer-edition
   google-chrome
-  hyper
   rectangle
   spotify
   visual-studio-code
-
-  # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
-  qlcolorcode
-  qlstephen
-  qlmarkdown
-  quicklook-json
-  qlimagesize
 )
 
 npms=(
   diff-so-fancy
-  nodemon
-  now
   npm
-  np
   pure-prompt
-  wallace-cli
-  yarn
 )
 
 set +e # Enables checking of commands
@@ -137,37 +119,5 @@ sh macos.sh
 # http://sourabhbajaj.com/mac-setup/Homebrew/
 # https://github.com/driesvints/dotfiles/blob/master/path.zsh
 echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
-
-# CONFIGURE GIT
-ln -sf $(pwd)/.gitconfig ~/.gitconfig
-ln -sf $(pwd)/.gitignore_global ~/.gitignore_global
-
-# SETUP ALIASES ETC
-echo "symlink aliases and functions"
-ln -sf $(pwd)/env.sh ~/env.sh
-
-echo "symlink zshrc config"
-ln -sf $(pwd)/.zshrc ~/.zshrc
-
-echo "symlink hyper config"
-ln -sf $(pwd)/.hyper.js ~/.hyper.js
-
-echo "symlink gemrc"
-ln -sf $(pwd)/.gemrc ~/.gemrc
-
-echo "symlink .npmrc"
-ls -sf $(pwd)/.npmrc ~/.npmrc
-
-# Setup dock
-dockutil --no-restart --remove all
-dockutil --no-restart --add "/Applications/Firefox Developer Edition.app"
-dockutil --no-restart --add "/Applications/Hyper.app"
-dockutil --no-restart --add "/Applications/Visual Studio Code.app"
-dockutil --no-restart --add "/Applications/Spotify.app"
-
-killall Dock
-
-# Set Wallpaper via wallpaper-cli
-wallpaper https://images.unsplash.com/photo-1464011106587-1693fe42a668\?ixlib\=rb-0.3.5\&q\=85\&fm\=jpg\&crop\=entropy\&cs\=srgb\&s\=2565dd6bec95d75483a2ce69a35a989f
 
 echo "Done! You may need to reboot your machine for all changes to take effect"
