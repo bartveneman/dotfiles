@@ -31,10 +31,12 @@
 [fetch]
 	# Clean up removed branches when fetching/pulling
 	prune = true
+	pruneTags = true
+	all = true
 
 [help]
-	# Don't autocorrect typos, wait 10 seconds before auto-correcting
-	autocorrect = 100
+	# Don't autocorrect typos, suggest an alternative instead
+	autocorrect = prompt
 
 [pager]
 	diff = diff-so-fancy | less --tabs=1,5 -RFX
@@ -59,10 +61,24 @@
 	defaultBranch = main
 
 [branch]
+	# Sort branches by when their last commit was made
+	# This is more useful than the default sorting by name
 	sort = -committerdate
 
 [tag]
 	forceSignAnnotated = true
+	sort = version:refname
+
+[user]
+	name = Bart Veneman
+	# email = TODO
 
 [github]
 	username = bartveneman
+
+[column]
+	ui = auto
+
+[rerere]
+	enabled = true
+	autoupdate = true
