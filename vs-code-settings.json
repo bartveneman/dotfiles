@@ -1,47 +1,140 @@
 {
-    "window.zoomLevel": 0,
-    "editor.fontSize": 14,
-    "workbench.colorTheme": "ZEIT",
-    "atomKeymap.promptV3Features": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": false,
-    "workbench.statusBar.feedback.visible": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.tabSize": 2,
-    "explorer.confirmDelete": false,
-    "workbench.editor.enablePreview": false,
-    "files.associations": {
-        ".aliases": "shellscript",
-        ".gromitrc": "jsonc",
-        ".pug-lintrc": "jsonc"
+  "editor.rulers": [120],
+  "editor.fontSize": 15,
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "workbench.startupEditor": "none",
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "files.associations": {
+    ".aliases": "shellscript",
+    ".pug-lintrc": "jsonc",
+    ".gitlab-ci": "yaml",
+    ".stylelintrc": "jsonc",
+    "*.svx": "markdown"
+  },
+  "files.trimTrailingWhitespace": true,
+  "editor.renderWhitespace": "boundary",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "update.showReleaseNotes": false,
+  "explorer.openEditors.visible": 0,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "editor.scrollBeyondLastLine": false,
+  "editor.lineHeight": 2.2,
+  "editor.minimap.showSlider": "always",
+  "editor.suggestSelection": "first",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "telemetry.telemetryLevel": "off",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true
+  },
+  "gitlens.blame.avatars": false,
+  "editor.linkedEditing": true,
+  "gitlens.codeLens.scopes": ["containers", "document"],
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "extensions.ignoreRecommendations": true,
+  "keyboard.touchbar.enabled": false,
+  "workbench.enableExperiments": false,
+  "workbench.tips.enabled": false,
+  "debug.javascript.resourceRequestOptions": {},
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": ["-l"],
+      "icon": "terminal-bash"
     },
-    "editor.insertSpaces": false,
-    "files.trimTrailingWhitespace": true,
-    "editor.renderWhitespace": "boundary",
-    "puglint.enable": true,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "explorer.confirmDragAndDrop": false,
-    "editor.formatOnSave": true,
-    "update.showReleaseNotes": false,
-    "prettier.requireConfig": true,
-    "workbench.activityBar.visible": false,
-    "markdownlint.config": {
-        "MD013": false,
-        "MD002": false
-    },
-    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
-    "explorer.openEditors.visible": 0,
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "cSpell.userWords": [
-        "minified",
-        "preprocessors"
-    ],
-    "editor.scrollBeyondLastLine": false,
-    "indentRainbow.colors": [
-        "rgba(48,48,48,0.3)",
-        "rgba(64,64,64,0.3)",
-"       rgba(96,95,95,0.3)"
-    ]
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
+    }
+  },
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.showWelcomeOnInstall": false,
+  "explorer.autoReveal": false,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "git.pruneOnFetch": true,
+  "editor.maxTokenizationLineLength": 100000,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.accessibilitySupport": "off",
+  "terminal.integrated.scrollback": 100000,
+  "workbench.sideBar.location": "right",
+  "breadcrumbs.enabled": false,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "notebook.dragAndDropEnabled": false,
+  "editor.dragAndDrop": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.insertSpaces": false,
+  "svelte.plugin.css.globals": "./src/lib/styles/*.css",
+  "gitlens.hovers.enabled": false,
+  "gitlens.blame.highlight.locations": ["gutter", "overview"],
+  "gitlens.blame.separateLines": false,
+  "gitlens.codeLens.enabled": false,
+  "workbench.editor.labelFormat": "short",
+  "git.ignoreMissingGitWarning": true,
+  "editor.formatOnSave": true,
+  "terminal.integrated.lineHeight": 1.4,
+  "editor.minimap.enabled": false,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js, ${capture}.typegen.ts",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts, ${capture}.typegen.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
+    "*.mts": "${capture}.typegen.ts",
+    "*.cts": "${capture}.typegen.ts"
+  },
+  "terminal.integrated.fontSize": 14,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "git.openRepositoryInParentFolders": "never",
+  "svgPreview.autoOpen": false,
+  "workbench.colorTheme": "GitHub Dark High Contrast",
+  "cSpell.files": ["package.json"],
+  "svelte.ask-to-enable-ts-plugin": false,
+  "svelte.enable-ts-plugin": true,
+  "workbench.activityBar.location": "hidden",
+  "editor.formatOnPaste": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "editor.fontVariations": false,
+  "github.copilot.advanced": {
+    "acceptSuggestionOnTab": true
+  },
+  "workbench.preferredHighContrastColorTheme": "GitHub Dark Default",
+  "coverage-gutters.coverageFileNames": [
+    "lcov.info",
+    "cov.xml",
+    "coverage.xml"
+  ],
+  "coverage-gutters.manualCoverageFilePaths": [
+    "/Users/bart.veneman/www/projectwallace/format-css/coverage/lcov.info"
+  ],
+  "accessibility.underlineLinks": true,
+  "workbench.editor.enablePreview": false,
+  // "editor.formatOnSaveMode": "modifications",
+  // "eslint.codeActionsOnSave.rules": null
 }
