@@ -9,6 +9,7 @@ brews=(
   node
   nvm
   python
+  pure
   zsh
   zsh-completions
   zsh-autosuggestions
@@ -16,9 +17,14 @@ brews=(
 )
 
 casks=(
+  microsoft-edge
+  monitorcontrol
+  musescore
+  notunes
+  raycast
+  signal
+  slack
   firefox
-  google-chrome
-  rectangle
   spotify
   visual-studio-code
 )
@@ -26,7 +32,6 @@ casks=(
 npms=(
   diff-so-fancy
   npm
-  pure-prompt
 )
 
 set +e # Enables checking of commands
