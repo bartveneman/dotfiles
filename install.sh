@@ -6,6 +6,7 @@ brews=(
   coreutils
   git
   grep
+  jless
   node
   nvm
   python
