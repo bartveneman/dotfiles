@@ -4,6 +4,7 @@ brews=(
   bash
   bat
   coreutils
+  gh
   git
   grep
   jless
