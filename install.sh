@@ -9,6 +9,7 @@ brews=(
   jless
   node
   nvm
+  pnpm
   python
   pure
   zsh
