@@ -23,13 +23,14 @@ casks=(
   microsoft-edge
   monitorcontrol
   musescore
-  notunes
+  notunes #  Prevent Apple Music from starting all the time.
   raycast
   signal
   slack
   firefox
   spotify
   visual-studio-code
+  handy # local speech-to-text
 )
 
 npms=(
